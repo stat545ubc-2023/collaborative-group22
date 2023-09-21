@@ -12,6 +12,7 @@ This is a project completed by students of Group 22 as part of STAT545A course. 
 | README.md             | It provides a detail description about the collaborative project.                                                                                                                               |
 | TEAMWORK.md           | It has the guidelines on how Group 22 would work together on this Collaborative project. The guidelines include agreements for teamwork, including division of labour, and time of submissions. |
 | troubleshooting-1.rmd | It is an R markdown document whose bugs were identified and fixed.                                                                                                                              |
+
 ## _Guide to run the code_
 * Git clone the project.
 * Open the project in RStudio. 
