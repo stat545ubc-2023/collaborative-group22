@@ -1,6 +1,3 @@
-STAT 545A Troubleshooting Exercise for Milestone 1
-================
-
 There are **3 code chunks with errors** in this Rmd. Your objective is
 to fix all of the errors in this worksheet. Make sure to indicate what
 lines you changed and why (by commenting \# in the code).
@@ -16,12 +13,10 @@ explore the `mtcars` dataset.
 First, let’s store the current date as a variable. We can use the
 function `Sys.Date` with no arguments to get the current date:
 
-``` r
-## ERROR 1 ##
-today_ <- Sys.Date()
+    ## ERROR 1 ##
+    today_ <- Sys.Date()
 
-# variable cannot be started with the underscore "_"
-```
+    #Correction: A variable name must start with a letter, not an underscore
 
 You may notice that, although an error might appear in these cells, this
 Rmd file knits just fine. That’s because the `error = TRUE` *chunk
@@ -30,10 +25,8 @@ when an error is encountered.
 
 Now, let’s load the `tidyverse` (meta-) package:
 
-``` r
-## ERROR 2 ##
-library(tidyverse)
-```
+    ## ERROR 2 ##
+    library(tidyverse)
 
     ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
     ## ✔ dplyr     1.1.3     ✔ readr     2.1.4
@@ -46,19 +39,15 @@ library(tidyverse)
     ## ✖ dplyr::lag()    masks stats::lag()
     ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 
-``` r
-# shoub be library(), the word library should be singular, try ? library in the console to see the document 
-```
+    #Correction: Should be library not libraries
 
 By loading the tidyverse, a function called `glimpse` has been made
 available. This function is useful for viewing a data set. Let’s take a
 look at the `mtcars` dataset by applying the `glimpse` function to
 `mtcars`!
 
-``` r
-## ERROR 3 ##
-glimpse( mtcars)
-```
+    ## ERROR 3 ##
+    glimpse(mtcars)
 
     ## Rows: 32
     ## Columns: 11
@@ -74,9 +63,7 @@ glimpse( mtcars)
     ## $ gear <dbl> 4, 4, 4, 3, 3, 3, 3, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 4, 4, 4, 3, 3,…
     ## $ carb <dbl> 4, 4, 1, 1, 2, 1, 4, 2, 2, 4, 4, 3, 3, 3, 4, 4, 4, 1, 2, 1, 1, 2,…
 
-``` r
-# miss parentheses when using function,  have to pass the parameter into the parentheses 
-```
+    #Parentheses needed to run function
 
 ## Attribution
 
