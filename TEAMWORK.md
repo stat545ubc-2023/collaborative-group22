@@ -1,3 +1,4 @@
+
 # **This is the Teamwork Contract for Group 22**
 ## *Division of Labour:*
 For the first Milestone we will divide work in the following way: 
@@ -14,3 +15,4 @@ We will each aim to submit all of our pull requests by at least 24 hours before 
 We will communicate using Slack for planning, organizing, and broader questions about the project. For more specific questions we will communicate using Github Issues. We expect group members to respond to both Slack and Github Issues within 24 hours at the latest, although rapid responses are preferred, especially if someone is asking a questions about an issue they need help resolving. We will hold a zoom meeting that all members can attend for the second Milestone but use asynchronous communication for the first Milestone. 
 
 Thank you for reading 😃
+
