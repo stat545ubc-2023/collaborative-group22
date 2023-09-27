@@ -17,12 +17,27 @@ Note that errors are not all syntactic (i.e., broken code)! Some are logical err
 
 ```{r}
 ### ERROR HERE ###
-load.packages(dslabs)
-load.packages(tidyverse)
-load.packages(stringr)
-install.packages("devtools") # Do not run this if you already have this package installed! 
+
+#Correction: "dslabs" package installed before loading.
+
+install.packages("dslabs", repos = "http://cran.us.r-project.org")
+
+#Correction: Syntax to load libraries was modified.
+
+library("dslabs")
+library("tidyverse")
+library("stringr")
+
+#Correction: CRAN Mirror repo link was added.
+
+install.packages("devtools", repos = "http://cran.us.r-project.org" ) 
+
+# Do not run this if you already have this package installed! 
 devtools::install_github("JoeyBernhardt/singer")
-load.packages(gapminder)
+
+#Correction: Syntax to load libraries was modified.
+
+library(gapminder)
 ```
 
 Let's have a look at the dataset! My goal is to:
@@ -34,8 +49,13 @@ Let's have a look at the dataset! My goal is to:
 ```{r}
 ### ERROR HERE ###
 class(dslabs::movielens)
+
 movieLens <- as_tibble(dslabs::movielens)
-dim(movieLens)
+class(movieLens)
+
+#Correction: dim() was replaced by glimpse() to have a look at the tibble
+
+glimpse(movieLens)
 ```
 
 Now that we've had a quick look at the dataset, it would be interesting to explore the rows (observations) in some more detail. I'd like to consider the movie entries that...
@@ -50,8 +70,14 @@ Now that we've had a quick look at the dataset, it would be interesting to explo
 ### ERROR HERE ###
 filter(movieLens, genres == "Drama")
 filter(movieLens, !genres == "Drama")
-filter(movieLens, year >= 2000)
-filter(movieLens, year == 1999 | month == 2000)
+
+#Correction: conditional operator was changed from >= to >.
+
+filter(movieLens, year > 2000)
+
+#Correction: expression 'month == 2000' was changed to 'year == 2000'
+
+filter(movieLens, year == 1999 | year == 2000)
 filter(movieLens, rating > 4.5, year < 1995)
 ```
 
