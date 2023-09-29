@@ -1,4 +1,4 @@
-# STAT 545A Collaborative Project: Milestone 1
+# STAT 545A Collaborative Project: Milestone 2
 ## _Group 22_
 
 ![](https://stat545.stat.ubc.ca/authors/stat545/avatar_huf4717ac7bb02e1e6e71c93d598be4e8c_207639_250x250_fill_lanczos_center_3.png)  
@@ -11,7 +11,9 @@ This is a project completed by students of Group 22 as part of STAT545A course. 
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | README.md             | It provides a detail description about the collaborative project.                                                                                                                               |
 | TEAMWORK.md           | It has the guidelines on how Group 22 would work together on this Collaborative project. The guidelines include agreements for teamwork, including division of labour, and time of submissions. |
-| troubleshooting-1.rmd | It is an R markdown document whose bugs were identified and fixed.                                                                                                                              |
+| troubleshooting-1.rmd | It is the first R markdown document whose bugs were identified and fixed.   
+| troubleshooting-2.rmd | It is the second R markdown document whose bugs were identified and fixed.
+            
 
 ## _Guide to run the code_
 * Git clone the project.
