@@ -118,6 +118,7 @@ movielens %>%
     transmute(average_rating = mean(rating)) %>%
     head(5)
 
+
 ```
 
 ## Exercise 3: Calculating with `summarise()`-like functions
@@ -174,6 +175,7 @@ Using `summarize()`, we can find the minimum and the maximum rating by title, st
 movieLens %>%
   group_by(title) %>%
   summarize(min_rating = min(rating)) 
+
 
 ```
 
@@ -238,3 +240,4 @@ fakeStarWars <- tribble(
 
 
 Thanks to Icíar Fernández-Boyano for writing most of this document, and Albina Gibadullina, Diana Lin, Yulia Egorova, and Vincenzo Coia for their edits.
+
