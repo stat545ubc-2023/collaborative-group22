@@ -115,7 +115,8 @@ As you already know, `mutate()` defines and inserts new variables into a tibble.
 ### JUSTIN FIXED ERROR  ###
 #Correction: mutate() function can drop all others column
 movielens %>%
-    transmute(average_rating = mean(rating))
+    transmute(average_rating = mean(rating)) %>%
+    head(5)
 
 ```
 
