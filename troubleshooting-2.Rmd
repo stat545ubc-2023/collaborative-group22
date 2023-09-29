@@ -115,7 +115,9 @@ As you already know, `mutate()` defines and inserts new variables into a tibble.
 ### JUSTIN FIXED ERROR  ###
 #Correction: mutate() function can drop all others column
 movielens %>%
-    transmute(average_rating = mean(rating))
+    transmute(average_rating = mean(rating)) %>%
+    head(5)
+
 
 ```
 
@@ -172,7 +174,8 @@ Using `summarize()`, we can find the minimum and the maximum rating by title, st
 ###JUSTIN FIXED ERROR ###
 movieLens %>%
   group_by(title) %>%
-  summarize(min_rating = min(rating), 
+  summarize(min_rating = min(rating)) 
+
 
 ```
 
